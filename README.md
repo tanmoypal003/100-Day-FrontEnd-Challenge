@@ -1,3 +1,7 @@
-# Preview & Destination of files of the project
+# Preview & Source of files of the project
 
-# Day 001 [code] [preview]
+# Task 001 [source](Task-001) [preview]()
+
+# Task 002 [source]() [preview]()
+
+# Task 003 [source]() [preview]()
