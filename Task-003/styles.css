@@ -12,26 +12,81 @@ body {
 }
 
 .container {
-    max-width: 800px;
+    width: 80%;
     margin: 50px auto;
 }
 
-.container .accordion-header {
-    text-align: center;
-}
-
-.container h1 {
+.container .accordion-header h1 {
     font-size: 2.4em;
     margin-bottom: 15px;
     text-indent: 5px;
-    /* font-weight: 700; */
+    text-align: center;
 }
 
-.container p {
+.container .accordion-header p {
     font-size: 1.3em;
+    margin-left: 13%;
     text-align: center;
     text-wrap: balance;
     line-height: 1.8;
     color: #282828;
     margin-bottom: 3em;
+    width: 800px;
+}
+
+.container .accordion-body {
+    background-color: #fff;
+    border: 2px solid #ced2d8;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+
+.container .accordion-wrapper {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 10px 0 5px 0;
+}
+
+.container .accordion-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.4rem;
+    font-weight: 700;
+    padding: 25px 40px 0 40px;
+}
+
+.container .accordion-body.active {
+    border: none;
+    box-shadow: 9px 10px 25px 0 rgb(196, 196, 196);
+}
+
+.container .accordion-body .fa-plus {
+    font-size: 1.7rem;
+    display: block;
+}
+
+.container .accordion-body.active .fa-plus {
+    display: none;
+}
+
+.container .accordion-body .fa-minus {
+    display: none;
+}
+
+.container .accordion-body.active .fa-minus {
+    font-size: 1.7rem;
+    display: block;
+}
+
+.container .accordion-content p {
+    display: none;
+}
+
+.container .accordion-body.active p {
+    display: block;
+    font-size: 18px;
+    padding: 0 35px 15px 35px;
 }
